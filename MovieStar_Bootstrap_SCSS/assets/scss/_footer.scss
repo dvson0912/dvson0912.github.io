@@ -1,0 +1,42 @@
+.footer {
+  background-color: $bg-color;
+  &-top {
+    padding: 5.2rem 0 3.2rem;
+    border-bottom: 1px solid $gray-color;
+    &__heading {
+      font-size: 1.8rem;
+      color: $second-color;
+      margin-bottom: 3rem;
+    }
+    &__item {
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      i {
+        font-size: 1.4rem;
+        position: relative;
+        top: 2px;
+        width: 3rem;
+        height: 3rem;
+        display: inline-block;
+      }
+    }
+    &__link {
+      font-size: 1.2rem;
+      display: inline-block;
+      font-weight: 400;
+      letter-spacing: 2px;
+      color: white;
+      padding: 4px 0;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+  &-bottom {
+    padding: 2.4rem 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+  }
+}

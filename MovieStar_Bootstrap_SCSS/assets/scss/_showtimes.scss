@@ -1,0 +1,79 @@
+.showtimes {
+  &__nav {
+    li {
+      button {
+        font-size: 1.6rem;
+        color: $text-color;
+        padding: 8px 24px;
+        &:hover {
+          color: $second-color;
+        }
+      }
+      .nav-link.active {
+        color: $second-color;
+      }
+    }
+  }
+  &__movie {
+    &-item {
+      padding: 5.2rem 0;
+      border-bottom: 1px solid $gray-color;
+      position: relative;
+    }
+    &-img {
+      border-radius: 8px;
+    }
+    &-name {
+      font-size: 2.4rem;
+      font-weight: 300;
+      margin: 1rem 0;
+      color: $text-color;
+    }
+    &-description {
+      font-size: 1.4rem;
+      color: $gray-color;
+    }
+    &-link {
+      color: $second-color;
+      letter-spacing: 3px;
+      font-size: 1.3rem;
+      display: block;
+      margin: 3rem 0 2.4rem;
+      font-weight: 300;
+    }
+    &-time {
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      button {
+        font-size: 1.4rem;
+        background-color: $gray-color;
+        opacity: 0.7;
+      }
+      button.disabled {
+        opacity: 0.4;
+      }
+    }
+    &-duration {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      right: 0;
+      bottom: 20%;
+      font-size: 1.4rem;
+      letter-spacing: 2px;
+      span {
+        width: 33px;
+        height: 33px;
+        line-height: 33px;
+        display: block;
+        text-align: center;
+        color: white;
+        font-weight: 700;
+        border-radius: 50%;
+        background-color: $text-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+}
+
+@media screen and (max-width: 1023px) {
+  .carousel-item img {
+    height: 60rem;
+  }
+  .header__body-nav {
+    display: none;
+  }
+  .showMobile {
+    position: absolute;
+    display: flex !important;
+    top: 60px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    height: 400px;
+    overflow: hidden;
+    z-index: 1;
+    background-color: $bg-color;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .showtimes__movie-duration {
+    bottom: 11%;
+    right: 4%;
+  }
+}

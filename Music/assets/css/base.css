@@ -1,0 +1,151 @@
+:root{
+    --text-color:#D7CEDF;
+    --hover-item-color:#ffffff1a;
+    --primary-color:#ED2B91;
+    --sidebar-color:#411465;
+    --scroll-color:hsla(0,0%,100%,0.3);
+    --search-history:#6A39AF;
+    --vip-btn:#FFDB00;
+    --height-playsong:90px;
+    --height-sidebar: calc(100vh - var(--height-playsong));
+    --width-sidebar: 240px;
+    --height-header: 70px;
+    --input-background:rgba(255, 255, 255,0.4);
+    --width-slider-3d:300px;
+    --background-liner:linear-gradient(135deg,#5E4CE6,#C26BD8);
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    cursor: pointer;
+    padding: 6px 16px;
+    border-radius: 24px;
+    font-size: 1.2rem;
+    border: none;
+    text-transform: uppercase;
+    background-color: var(--hover-item-color);
+    color: var(--text-color);
+}
+
+.btn i {
+    margin-right: 8px;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn + .btn-primary{
+    margin-left: 12px;
+}
+
+.btn-primary{
+    background-color: var(--primary-color);
+}
+
+.heading__link{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-left: 32px;
+}
+
+.heading__link i{
+    margin-left: 8px;
+}
+
+.heading__link:hover{
+    color: var(--primary-color);
+}
+
+/* slider */
+.container__song-body-slider{
+    min-width: var(--width-slider-3d);
+}
+.sider__list{
+    position: relative;
+}
+
+.slider__item{
+    width: 85%;
+    padding-top: auto;
+    position: absolute;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.slider__item-img{
+    width: 100%;
+    min-height: 250px;
+}
+
+.first{
+    transform: translateX(20%);
+    z-index: 3;
+    animation: fadeFirst 0.5s ease;
+}
+
+@keyframes fadeFirst{
+    from{
+        transform: translateX(5%) scale(0.9);
+        opacity: 0.8;
+    }
+}
+
+.second{
+    transform: translateX(5%) scale(0.9);
+    z-index: 2;
+    opacity: 0.8;
+    animation: fadeSecond 0.5s ease;
+}
+
+@keyframes fadeSecond{
+    from{
+        transform: translateX(-10%) scale(0.8);
+        opacity: 0.6;
+    }
+}
+
+.third{
+    transform: translateX(-10%) scale(0.8);
+    z-index: 1;
+    opacity: 0.6;
+    animation: fadeThird 0.5s ease;
+}
+
+@keyframes fadeThird{
+    from{
+        transform: translateX(-10%) scale(0.8);
+        opacity: 0.1;
+    }
+}
+
+.front{
+    transform: translateX(-10%) scale(0.8);
+    z-index: 0;
+    opacity: 0.1;
+    animation: fadeFront 0.5s ease;
+}
+
+@keyframes fadeThird{
+    from{
+        transform: translateX(20%) scale(1);
+        opacity: 1;
+    }
+}

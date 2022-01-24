@@ -1,0 +1,19 @@
+.supplier{
+    &-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    &__item{
+        // margin-right: 10rem;
+        margin: 3rem 0;
+        width: calc(25%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__img{
+        height: 80px;
+        width: 200px;
+    }
+}

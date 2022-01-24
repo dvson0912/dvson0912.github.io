@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="container">
+                <div class="header__contact mt-4 text-white d-flex justify-content-end">
+                    <ul class="header__contact-list d-flex">
+                        <li class="header__contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <p>088888888899</p>
+                        </li>
+                        <li class="header__contact-item">
+                            <i class="header__contact-search fas fa-search"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__body mt-4 d-flex justify-content-between">
+                    <div class="header__logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="217px" height="53px"
+                            viewBox="0 0 217 53" version="1.1">
+                            <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+                            <title>Logo</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs>
+                                <linearGradient x1="50%" y1="-2.48949813e-15%" x2="50%" y2="100%" id="linearGradient-1">
+                                    <stop stop-color="#FBBD61" offset="0%" />
+                                    <stop stop-color="#EC7532" offset="100%" />
+                                </linearGradient>
+                            </defs>
+                            <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Home" transform="translate(-150.000000, -60.000000)">
+                                    <g id="Hero">
+                                        <g id="Logo" transform="translate(150.000000, 60.000000)">
+                                            <polygon id="M" fill="url(#linearGradient-1)"
+                                                transform="translate(25.632000, 26.900000) scale(-1, 1) translate(-25.632000, -26.900000) "
+                                                points="0 12.704 25.664 38.496 42.816 21.408 42.816 53 51.264 53 51.264 0.8 25.664 26.4 0 0.8" />
+                                            <path
+                                                d="M53.537,30.279 C52.8569966,29.5309963 52.0211716,29.157 51.0295,29.157 C50.0378284,29.157 49.2020034,29.5309963 48.522,30.279 C47.8419966,31.0270037 47.502,31.930828 47.502,32.9905 C47.502,34.050172 47.8419966,34.951163 48.522,35.6935 C49.2020034,36.435837 50.0378284,36.807 51.0295,36.807 C52.0211716,36.807 52.8569966,36.435837 53.537,35.6935 C54.2170034,34.951163 54.557,34.050172 54.557,32.9905 C54.557,31.930828 54.2170034,31.0270037 53.537,30.279 Z M51.021,39.119 C49.2643246,39.119 47.7853393,38.5325059 46.584,37.3595 C45.3826607,36.1864941 44.782,34.7273421 44.782,32.982 C44.782,31.2366579 45.3826607,29.7775059 46.584,28.6045 C47.7853393,27.4314941 49.2643246,26.845 51.021,26.845 C52.7776755,26.845 54.2566607,27.4314941 55.458,28.6045 C56.6593393,29.7775059 57.26,31.2366579 57.26,32.982 C57.26,34.7273421 56.6593393,36.1864941 55.458,37.3595 C54.2566607,38.5325059 52.7776755,39.119 51.021,39.119 Z M73.8179989,34.682 L76.8439989,27.117 L79.7169989,27.117 L74.9399989,39 L72.6959989,39 L67.9189989,27.117 L70.7919989,27.117 L73.8179989,34.682 Z M91.3279977,27.117 L93.9799977,27.117 L93.9799977,39 L91.3279977,39 L91.3279977,27.117 Z M115.671997,27.117 L115.671997,29.48 L109.755997,29.48 L109.755997,31.928 L115.076997,31.928 L115.076997,34.189 L109.755997,34.189 L109.755997,36.654 L115.858997,36.654 L115.858997,39 L107.103997,39 L107.103997,27.117 L115.671997,27.117 Z M145.455994,29.038 C145.081992,29.2760012 144.894994,29.6358309 144.894994,30.1175 C144.894994,30.5991691 145.081992,30.9674987 145.455994,31.2225 C145.829996,31.4775013 146.626155,31.7523319 147.844494,32.047 C149.062834,32.3416681 149.980825,32.7553307 150.598494,33.288 C151.216164,33.8206693 151.524994,34.6054948 151.524994,35.6425 C151.524994,36.6795052 151.133998,37.5209968 150.351994,38.167 C149.56999,38.8130032 148.544334,39.136 147.274994,39.136 C145.416318,39.136 143.767335,38.4956731 142.327994,37.215 L143.585994,35.702 C144.787334,36.7446719 146.033988,37.266 147.325994,37.266 C147.971998,37.266 148.484826,37.1271681 148.864494,36.8495 C149.244163,36.5718319 149.433994,36.2035023 149.433994,35.7445 C149.433994,35.2854977 149.255496,34.9285013 148.898494,34.6735 C148.541492,34.4184987 147.926665,34.1861677 147.053994,33.9765 C146.181323,33.7668323 145.51833,33.5741675 145.064994,33.3985 C144.611659,33.2228325 144.209329,32.9933348 143.857994,32.71 C143.155324,32.1773307 142.803994,31.3613388 142.803994,30.262 C142.803994,29.1626612 143.20349,28.315503 144.002494,27.7205 C144.801498,27.125497 145.790322,26.828 146.968994,26.828 C147.728331,26.828 148.481991,26.9526654 149.229994,27.202 C149.977998,27.4513346 150.623992,27.8026644 151.167994,28.256 L150.096994,29.769 C149.745659,29.4516651 149.269664,29.191001 148.668994,28.987 C148.068325,28.782999 147.476164,28.681 146.892494,28.681 C146.308825,28.681 145.829996,28.7999988 145.455994,29.038 Z M168.694993,28.953 L168.694993,39 L166.688993,39 L166.688993,28.953 L163.084993,28.953 L163.084993,27.117 L172.298993,27.117 L172.298993,28.953 L168.694993,28.953 Z M185.422992,36.297 L184.232992,39 L182.090992,39 L187.326992,27.117 L189.468992,27.117 L194.704992,39 L192.562992,39 L191.372992,36.297 L185.422992,36.297 Z M190.556992,34.444 L188.397992,29.548 L186.238992,34.444 L190.556992,34.444 Z M216.039991,30.976 C216.039991,32.9366765 215.184333,34.1719975 213.472991,34.682 L216.583991,39 L214.033991,39 L211.194991,35.005 L208.559991,35.005 L208.559991,39 L206.553991,39 L206.553991,27.117 L210.973991,27.117 C212.787333,27.117 214.084987,27.4229969 214.866991,28.035 C215.648995,28.6470031 216.039991,29.6273266 216.039991,30.976 Z M213.370991,32.659 C213.778993,32.3076649 213.982991,31.7438372 213.982991,30.9675 C213.982991,30.1911628 213.773326,29.6585014 213.353991,29.3695 C212.934655,29.0804986 212.186663,28.936 211.109991,28.936 L208.559991,28.936 L208.559991,33.186 L211.058991,33.186 C212.19233,33.186 212.962989,33.0103351 213.370991,32.659 Z"
+                                                id="OVIE-STAR" fill="#FFFFFF" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="node__menu ml-auto d-lg-none">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <ul class="navbar-nav d-none d-lg-flex ml-auto header__body-nav">
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">WHAT'S ON</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">SHORTCODES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">NEWS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="carousel">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            
+                <!-- Indicators/dots -->
+                <div class="container carousel__list-dot carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active "></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class=""></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class=""></button>
+                </div>
+            
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/hero-1.jpg" alt="Los Angeles" class="d-block w-100">
+                        <div class="carousel-item__content carousel-caption">
+                            <div class="container">
+                                <p class="title title--primary">ACTION, ADVENTURE, FANTASY</p>
+                                <h2 class="carousel-item__content-heading">
+                                    End of the World: Part II
+                                </h2>    
+                                <p class="carousel-item__content-text">
+                                    Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamu.
+                                </p>
+                                <button class="button button--primary">
+                                    <i class="fas fa-play"></i>
+                                    play trailer
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/hero-3.jpg" alt="Chicago" class="d-block w-100">
+                        <div class="carousel-item__content carousel-caption">
+                            <div class="container">
+                                <p class="title title--primary">ACTION, ADVENTURE, FANTASY</p>
+                                <h2 class="carousel-item__content-heading">
+                                    End of the World: Part II
+                                </h2>    
+                                <p class="carousel-item__content-text">
+                                    Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamu.
+                                </p>
+                                <button class="button button--primary">
+                                    <i class="fas fa-play"></i>
+                                    play trailer
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/hero-1.jpg" alt="New York" class="d-block w-100">
+                        <div class="carousel-item__content carousel-caption">
+                            <div class="container">
+                                <p class="title title--primary">ACTION, ADVENTURE, FANTASY</p>
+                                <h2 class="carousel-item__content-heading">
+                                    End of the World: Part II
+                                </h2>    
+                                <p class="carousel-item__content-text">
+                                    Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamu.
+                                </p>
+                                <button class="button button--primary">
+                                    <i class="fas fa-play"></i>
+                                    play trailer
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="newMovie">
+            <div class="container">
+                <h3 class="title title--second newMovie__title">new in</h3>
+                <div class="row gx-5">
+                    <div class="col-6 col-md-3 newMovie__item">
+                        <div class="newMovie__item-header">
+                            <img src="./assets/img/new1.jpg" alt="Movie-img" class="newMovie__img">
+                            <div class="over-play"></div>
+                            <div class="newMovie__item-hover">
+                                <div class="newMovie__item-play">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <a href="#" class="newMovie__item-link">
+                                    read more
+                                </a>
+                                <p class="newMovie__item-day">
+                                    Released: 7 Mar, 2017
+                                </p>
+                            </div>
+                        </div>
+                        <div class="newMovie__item-content">
+                            <h4 class="newMovie__item-name">
+                                The last post
+                            </h4>
+                            <div class="star">
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 newMovie__item">
+                        <div class="newMovie__item-header">
+                            <img src="./assets/img/new2.jpg" alt="Movie-img" class="newMovie__img">
+                            <div class="over-play"></div>
+                            <div class="newMovie__item-hover">
+                                <div class="newMovie__item-play">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <a href="#" class="newMovie__item-link">
+                                    read more
+                                </a>
+                                <p class="newMovie__item-day">
+                                    Released: 7 Mar, 2017
+                                </p>
+                            </div>
+                        </div>
+                        <div class="newMovie__item-content">
+                            <h4 class="newMovie__item-name">
+                                Dark and lovely
+                            </h4>
+                            <div class="star">
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 newMovie__item">
+                        <div class="newMovie__item-header">
+                            <img src="./assets/img/new3.jpg" alt="Movie-img" class="newMovie__img">
+                            <div class="over-play"></div>
+                            <div class="newMovie__item-hover">
+                                <div class="newMovie__item-play">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <a href="#" class="newMovie__item-link">
+                                    read more
+                                </a>
+                                <p class="newMovie__item-day">
+                                    Released: 7 Mar, 2017
+                                </p>
+                            </div>
+                        </div>
+                        <div class="newMovie__item-content">
+                            <h4 class="newMovie__item-name">
+                                Venture
+                            </h4>
+                            <div class="nstar">
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 newMovie__item">
+                        <div class="newMovie__item-header">
+                            <img src="./assets/img/new4.jpg" alt="Movie-img" class="newMovie__img">
+                            <div class="over-play"></div>
+                            <div class="newMovie__item-hover">
+                                <div class="newMovie__item-play">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <a href="#" class="newMovie__item-link">
+                                    read more
+                                </a>
+                                <p class="newMovie__item-day">
+                                    Released: 7 Mar, 2017
+                                </p>
+                            </div>
+                        </div>
+                        <div class="newMovie__item-content">
+                            <h4 class="newMovie__item-name">
+                                Hush
+                            </h4>
+                            <div class="star">
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="showtimes">
+            <div class="container">
+                <ul class="nav nav-tabs showtimes__nav" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="mon-tab" data-bs-toggle="tab" data-bs-target="#mon" type="button"
+                            role="tab" aria-controls="mon" aria-selected="true">MON</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tue-tab" data-bs-toggle="tab" data-bs-target="#tue" type="button"
+                            role="tab" aria-controls="tue" aria-selected="false">TUE</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="wed-tab" data-bs-toggle="tab" data-bs-target="#wed" type="button"
+                            role="tab" aria-controls="wed" aria-selected="false">WED</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="thu-tab" data-bs-toggle="tab" data-bs-target="#thu" type="button" role="tab"
+                            aria-controls="thu" aria-selected="false">THU</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="fri-tab" data-bs-toggle="tab" data-bs-target="#fri" type="button" role="tab"
+                            aria-controls="fri" aria-selected="false">FRI</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="sat-tab" data-bs-toggle="tab" data-bs-target="#sat" type="button" role="tab"
+                            aria-controls="sat" aria-selected="false">SAT</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="sun-tab" data-bs-toggle="tab" data-bs-target="#sun" type="button" role="tab"
+                            aria-controls="sun" aria-selected="false">SUN</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active showtimes__movie-list" id="mon" role="tabpanel" aria-labelledby="mon-tab">
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tue" role="tabpanel" aria-labelledby="tue-tab">
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="wed" role="tabpanel" aria-labelledby="wed-tab">
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="thu" role="tabpanel" aria-labelledby="thu-tab">
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="fri" role="tabpanel" aria-labelledby="fri-tab">
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="sat" role="tabpanel" aria-labelledby="sat-tab">
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="sun" role="tabpanel" aria-labelledby="sun-tab">
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-5 showtimes__movie-item">
+                            <div class="col-12 col-sm-6 col-md-2">
+                                <img src="./assets/img/movie-1.jpg" alt="" class="showtimes__movie-img">
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <div class="title title--second">DRAMA</div>
+                                <h3 class="showtimes__movie-name">Daylight</h3>
+                                <p class="showtimes__movie-description">
+                                    A chronicle of the childhood, adolescence and burgeoning adulthood of a young black man growing up in a
+                                    rough
+                                    neighborhood of Miami.
+                                </p>
+                                <a href="#" class="showtimes__movie-link">FULL SYNOPSIS ></a>
+                                <div class="showtimes__movie-time">
+                                    <span>
+                                        <i class="fas fa-clock"></i>
+                                        VIEWING TIMES
+                                    </span>
+                                    <button class="btn btn-secondary disabled">12:00</button>
+                                    <button class="btn btn-secondary disabled">13:15</button>
+                                    <button class="btn btn-secondary">14:00</button>
+                                    <button class="btn btn-secondary">20:00</button>
+                                </div>
+                                <div class="showtimes__movie-duration">
+                                    105 Mins <span>U</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="comingsoon">
+            <div class="container">
+                <h2 class="comingsoon__heading">COMING SOON</h2>
+                <div class="comingsoon__content">
+                    <div class="row">
+                        <div class="col-12 col-md-6 comingsoon__content-left">
+                            <p class="title title--second mb-1">DRAMA, THRILLER</p>
+                            <h3 class="comingsoon__content-heading">Deepwater Horizon</h3>
+                            <div class="comingsoon__content-body">
+                                <div class="star">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="comingsoon__content-day">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    30 September, 2017
+                                </div>
+                            </div>
+                            <p class="comingsoon__content-desc">
+                                A dramatization of the April 2010 disaster, when the offshore drilling rig Deepwater Horizon exploded and created the
+                                worst oil spill in U.S. history.
+                            </p>
+                            <a href="#" class="comingsoon__content-link">
+                                MORE INFO >
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 pt-lg-3 comingsoon__box">
+                            <img src="./assets/img/slide-1-video.png" class="comingsoon__box-img" alt="">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="listMovie">
+            <div class="container">
+                <div class="row gx-5 listMovie__list">
+                    <div class="listMovie__item active col-6 col-sm-4 col-lg-2">
+                        <img src="./assets/img/list-1.jpg" alt="" class="listMovie__item-img">
+                        <h3 class="listMovie__item-name">
+                            Deepwater horizon
+                        </h3>
+                        <p class="listMovie__item-day">07 September, 2017</p>
+                    </div>
+                    <div class="listMovie__item col-6 col-sm-4 col-lg-2">
+                        <img src="./assets/img/list-2.jpg" alt="" class="listMovie__item-img">
+                        <h3 class="listMovie__item-name">
+                            Deepwater horizon
+                        </h3>
+                        <p class="listMovie__item-day">07 September, 2017</p>
+                    </div>
+                    <div class="listMovie__item col-6 col-sm-4 col-lg-2">
+                        <img src="./assets/img/list-3.jpg" alt="" class="listMovie__item-img">
+                        <h3 class="listMovie__item-name">
+                            Deepwater horizon
+                        </h3>
+                        <p class="listMovie__item-day">07 September, 2017</p>
+                    </div>
+                    <div class="listMovie__item col-6 col-sm-4 col-lg-2">
+                        <img src="./assets/img/list-4.jpg" alt="" class="listMovie__item-img">
+                        <h3 class="listMovie__item-name">
+                            Deepwater horizon
+                        </h3>
+                        <p class="listMovie__item-day">07 September, 2017</p>
+                    </div>
+                    <div class="listMovie__item col-6 col-sm-4 col-lg-2">
+                        <img src="./assets/img/list-5.jpg" alt="" class="listMovie__item-img">
+                        <h3 class="listMovie__item-name">
+                            Deepwater horizon
+                        </h3>
+                        <p class="listMovie__item-day">07 September, 2017</p>
+                    </div>
+                    <div class="listMovie__item col-6 col-sm-4 col-lg-2">
+                        <img src="./assets/img/list-6.jpg" alt="" class="listMovie__item-img">
+                        <h3 class="listMovie__item-name">
+                            Deepwater horizon
+                        </h3>
+                        <p class="listMovie__item-day">07 September, 2017</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="help">
+            <div class="container d-flex flex-column justify-content-center align-items-center">
+                <h3 class="help__text">
+                    Need help? Contact our support team on
+                </h3>
+                <p class="help__phone">0330 123 4567</p>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <h3 class="footer-top__heading">GET IN TOUCH</h3>
+                            <ul class="footer-top__list">
+                                <li class="footer-top__item">
+                                    <a href="#" class="footer-top__link">FAQs</a>
+                                </li>
+                                <li class="footer-top__item">
+                                    <a href="#" class="footer-top__link">Give us feedback</a>
+                                </li>
+                                <li class="footer-top__item">
+                                    <a href="#" class="footer-top__link">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <h3 class="footer-top__heading">ABOUT MOVIE STAR</h3>
+                            <ul class="footer-top__list">
+                                <li class="footer-top__item">
+                                    <a href="#" class="footer-top__link">About us</a>
+                                </li>
+                                <li class="footer-top__item">
+                                    <a href="#" class="footer-top__link">Find us</a>
+                                </li>
+                                <li class="footer-top__item">
+                                    <a href="#" class="footer-top__link">Schedule</a>
+                                </li>
+                                <li class="footer-top__item">
+                                    <a href="#" class="footer-top__link">News</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <h3 class="footer-top__heading">LEGAL STUFF</h3>
+                            <ul class="footer-top__list">
+                                <li class="footer-top__item">
+                                    <a href="#" class="footer-top__link">Terms & Conditions</a>
+                                </li>
+                                <li class="footer-top__item">
+                                    <a href="#" class="footer-top__link">Privacy policy</a>
+                                </li>
+                                <li class="footer-top__item">
+                                    <a href="#" class="footer-top__link">Cookie policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <h3 class="footer-top__heading">CONNECT WITH US</h3>
+                            <ul class="footer-top__list">
+                                <li class="footer-top__item">
+                                    <a href="#" class="footer-top__link">
+                                        <i class="fab fa-facebook-f"></i>
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li class="footer-top__item">
+                                    <a href="#" class="footer-top__link">
+                                        <i class="fab fa-twitter"></i>
+                                        Twitter
+                                    </a>
+                                </li>
+                                <li class="footer-top__item">
+                                    <a href="#" class="footer-top__link">
+                                        <i class="fab fa-google-plus-g"></i>
+                                        Google +
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p class="footer-bottom__text">
+                        2017 © Movie Star / Web design by Klever media
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script>
+        const menu = document.querySelector(".node__menu")
+        const nav = document.querySelector(".header__body-nav")
+        console.log(menu)
+        let isShow = false
+
+        menu.addEventListener("click",
+        ()=>{
+            nav.classList.toggle("showMobile")
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+</html>

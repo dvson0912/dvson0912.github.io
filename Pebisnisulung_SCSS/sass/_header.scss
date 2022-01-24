@@ -1,0 +1,25 @@
+.header {
+  padding-top: 40px;
+  &-container {
+    display: flex;
+    align-items: center;
+  }
+  &__list {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  &__item-link {
+    color: $text-color;
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin-right: 60px;
+    font-weight: 400;
+    transition: 0.5s;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

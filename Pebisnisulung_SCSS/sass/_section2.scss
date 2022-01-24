@@ -1,0 +1,24 @@
+.section2{
+    &-container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        padding: 5rem 0;
+    }
+    &__item{
+        flex: 0 0 calc(33.33% - 2rem);
+        padding: 1rem;
+        &-heading{
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 2rem;
+            font-weight: 500;
+            color: $title-color;
+        }
+        &:hover:not(:last-child){
+            transition: 1s;
+            box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+        }
+    }
+}

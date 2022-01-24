@@ -1,0 +1,51 @@
+.introduce{
+    &-container{
+        display: flex;
+        padding-top: 7rem;
+        padding-bottom: 9rem;
+    }
+    &__left{
+        flex:0 0 35%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 8rem;
+        position: relative;
+        &-text{
+            font-weight: 400;
+            font-size: 2rem;
+            color: $text-color;
+        }
+        &-img{
+            position: absolute;
+            width: 7.3rem;
+            height: 15rem;
+            transform: rotateX(40deg);
+            bottom: -6rem;
+            right: 2rem;
+        }
+    }
+    &__right{
+        display: flex;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 4rem 6rem;
+        transition: 0.5s;
+        &-heading{
+            margin: 1rem 0 2rem;
+            font-size: 2rem;
+            font-weight: 500;
+            color: $title-color;
+        }
+        &-description{
+            font-weight: 400;
+            font-size: 15px;
+            color: $text-color;
+        }
+        &:hover{
+            background: #fff;
+            box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+        }
+    }
+}

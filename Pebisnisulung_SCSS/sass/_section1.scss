@@ -1,0 +1,35 @@
+.section1{
+    padding: 2rem;
+    &-container{
+        background: url(../img/bgbanner2.png) no-repeat center/cover;
+        display: flex;
+        padding: 0 2rem;
+    }
+    &__left{
+        width: 65.5rem;
+        margin-right: 8rem;
+    }
+    &__right{
+        flex: 1;
+        padding: 5rem 14rem 0 0;
+    }
+    &__heading{
+        font-size: 3.6rem;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 2.6rem;
+    }
+    &__list{
+        margin-bottom: 6rem;
+    }
+    &__item{
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        color: #fff;
+        svg{
+            margin-right: 1.6rem;
+        }
+    }
+}

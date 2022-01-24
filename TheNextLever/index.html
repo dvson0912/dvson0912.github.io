@@ -1,0 +1,1808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- thư viên slick -->
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <!-- header -->
+        <header class="header">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="menu col l-0 m-5 c-5">
+                        <i class="icon-menu fas fa-bars"></i>
+                    </div>
+                    <div class="col header-logo l-2 m-2 c-2">
+                        <a href="#" class="header-logo__link">
+                            <img src="./assets/img/logo.webp" alt="Logo" class="header-log__img">
+                        </a>
+                    </div>
+                    <div class="col l-4 m-12 c-12 header-center">
+                        <div class="header-search">
+                            <input type="text" class="header-search__input" placeholder="Tìm kiếm sản phẩm...">
+                            <i class="fas fa-search header-search__icon"></i>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-5 c-5 header-concact">
+                        <div class="header-right__list flex-center" >
+                            <div class="header-right__item flex-center">
+                                <img src="https://theme.hstatic.net/200000249781/1000688480/14/phone.png?v=186" alt="" class="header-right__item-img">
+                                <div class="header-right__item-concact flex-center">
+                                    <h4 class="header-right__item-concact-label">Hỗ trợ khách hàng</h4>
+                                    <a href="#" class="header-right__item-concact-phone">0971932100</a>
+                                </div>
+                            </div>
+                            <div class="header-right__item flex-center">
+                                <img src="https://theme.hstatic.net/200000249781/1000688480/14/account.png?v=186" alt="" class="header-right__item-img">
+                                <div class="header-right__item-concact flex-center">
+                                    <a href="#" class="header-right__item-login">Đăng Nhập</a>
+                                    <a href="#" class="header-right__item-register">Đăng Ký</a>
+                                </div>
+                            </div>
+                            <div class="header-right__item cart flex-center">
+                                <div class="cart-item flex-center">
+                                    <a href="#" class="cart-item__link">
+                                        <i class="cart-icon fas fa-shopping-bag"></i>
+                                        <span class="header-right__item-cart-label">Giỏ hàng</span>
+                                        <span class="header-right__item-quantity">0</span>
+                                    </a>
+                                        <div class="cart-list flex-center">
+                                        <!-- class cart-null khi khong co san pham -->
+                                        <span class="cart-list__null">Không có sản phẩm nào</span>
+                                        <ul class="cart-list__list-products">
+                                            <li class="cart-list__product flex-center">
+                                                <a href="#" class="cart-list__product-link">
+                                                    <img src="https://product.hstatic.net/200000249781/product/ac-bt-b_c100a430c6f44ba9b7d8aa3d6f21fbfc_compact.jpg" alt="">
+                                                </a>
+                                                <div class="cart-list__product-body">
+                                                    <a href="#" class="cart-list__product-name">
+                                                        Áo thun Assassin's Creed Valhalla
+                                                    </a>
+                                                    <h3 class="cart-list__product-size">S, Black</h3>
+                                                    <div class="cart-list__product-description">
+                                                        <span class="cart-list__product-price">250.000</span>
+                                                        x
+                                                        <span class="cart-list__product-quantity">2</span>
+                                                    </div>
+                                                </div>
+                                                <i class="cart-list__product-delete fas fa-times"></i>
+                                            </li>
+                                            <li class="cart-list__product flex-center">
+                                                <a href="#" class="cart-list__product-link">
+                                                    <img src="https://product.hstatic.net/200000249781/product/ac-bt-b_c100a430c6f44ba9b7d8aa3d6f21fbfc_compact.jpg" alt="">
+                                                </a>
+                                                <div class="cart-list__product-body">
+                                                    <a href="#" class="cart-list__product-name">
+                                                        Áo thun Assassin's Creed Valhalla
+                                                    </a>
+                                                    <h3 class="cart-list__product-size">S, Black</h3>
+                                                    <div class="cart-list__product-description">
+                                                        <span class="cart-list__product-price">250.000</span>
+                                                        x
+                                                        <span class="cart-list__product-quantity">2</span>
+                                                    </div>
+                                                </div>
+                                                <i class="cart-list__product-delete fas fa-times"></i>
+                                            </li>
+                                            <li class="cart-list__product flex-center">
+                                                <a href="#" class="cart-list__product-link">
+                                                    <img src="https://product.hstatic.net/200000249781/product/ac-bt-b_c100a430c6f44ba9b7d8aa3d6f21fbfc_compact.jpg" alt="">
+                                                </a>
+                                                <div class="cart-list__product-body">
+                                                    <a href="#" class="cart-list__product-name">
+                                                        Áo thun Assassin's Creed Valhalla
+                                                    </a>
+                                                    <h3 class="cart-list__product-size">S, Black</h3>
+                                                    <div class="cart-list__product-description">
+                                                        <span class="cart-list__product-price">250.000</span>
+                                                        x
+                                                        <span class="cart-list__product-quantity">2</span>
+                                                    </div>
+                                                </div>
+                                                <i class="cart-list__product-delete fas fa-times"></i>
+                                            </li>
+                                        </ul>
+                                        <div class="cart-list__pay">
+                                            <div class="cart-list__pay-price">
+                                                Tổng tiền tạm tính:
+                                                <span class="cart-list__pay-total">750.000</span>
+                                            </div>
+                                            <a href="#" class="btn cart-list__pay-btn">
+                                                Tiến hành thanh toán
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-right__cart">
+                            <div class="cart-mobile flex-center">
+                                <a href="#" class="cart-moblie__link">
+                                    <i class="cart-moblie-icon fas fa-shopping-bag"></i>
+                                    <span class="cart-moblie__quantity">0</span>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- thanh navbar -->
+        <nav class="nav-category">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-12 m-12 c-12">
+                        <ul class="nav-category__list">
+                            <li class="nav-category__item">
+                                <a href="#" class="nav-category__item-link">Trang chủ</a>
+                            </li>
+                            <li class="nav-category__item">
+                                <a href="#" class="nav-category__item-link">
+                                    Sản phẩm
+                                    <i class="nav-category__item-icon fas fa-chevron-down"></i>
+                                </a>
+                                <ul class="sub-nav">
+                                    <li class="sub-nav__item"><a href="#" class="sub-nav__item-link">T-shirt</a></li>
+                                    <li class="sub-nav__item"><a href="#" class="sub-nav__item-link">Áo dài tay</a></li>
+                                    <li class="sub-nav__item"><a href="#" class="sub-nav__item-link">Sweater</a></li>
+                                    <li class="sub-nav__item"><a href="#" class="sub-nav__item-link">Hoodie</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-category__item">
+                                <a href="#" class="nav-category__item-link">
+                                    Bộ sưu tập
+                                    <i class="nav-category__item-icon fas fa-chevron-down"></i>
+                                </a>
+                                <ul class="sub-nav">
+                                    <li class="sub-nav__item"><a href="#" class="sub-nav__item-link">T-shirt</a></li>
+                                    <li class="sub-nav__item"><a href="#" class="sub-nav__item-link">Áo dài tay</a></li>
+                                    <li class="sub-nav__item"><a href="#" class="sub-nav__item-link">Sweater</a></li>
+                                    <li class="sub-nav__item"><a href="#" class="sub-nav__item-link">Hoodie</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-category__item">
+                                <a href="#" class="nav-category__item-link">
+                                    <img src="https://theme.hstatic.net/200000249781/1000688480/14/icon_menu_flashsale.png?v=186" alt="" class="sub-navbar__item-img">
+                                    RANDOM SALE
+                                </a>
+                            </li>
+                            <li class="nav-category__item">
+                                <a href="#" class="nav-category__item-link">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- slider -->
+        <div class="slider">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="slider-main col l-12 c-12 m-12">
+                        <div class="slider-item">
+                                <a href="#" class="slider-item__link">
+                                    <img src="./assets/img/slider_1.jpg" alt="" class="slider-item__img">
+                                </a>
+                        </div>
+                        <div class="slider-item">
+                                <a href="#" class="slider-item__link">
+                                    <img src="./assets/img/slider_2.webp" alt="" class="slider-item__img">
+                                </a>
+                        </div>
+                        <div class="slider-item">
+                                <a href="#" class="slider-item__link">
+                                    <img src="./assets/img/slider_3.jpg" alt="" class="slider-item__img">
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- slider category -->
+        <div class="slider-category flex-center">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="slider-category__list">
+                        <div class="col l-1-5 m-3 c-6 slider-category__item">
+                            <a href="#" class="slider-category__item-link">
+                                <img src="./assets/img/listcategory/brand_1.jpg" alt="" class="slider-category__img">
+                            </a>
+                            <div>
+                                <a href="#" class="slider-category__item-name">Wibu</a>
+                            </div>
+                        </div>
+                        <div class="col l-1-5 m-3 c-6 slider-category__item">
+                            <a href="#" class="slider-category__item-link">
+                                <img src="./assets/img/listcategory/brand_2.jpg" alt="" class="slider-category__img">
+                            </a>
+                            <div>
+                                <a href="#" class="slider-category__item-name">Cyberpunk 2077</a>
+                            </div>
+                        </div>
+                        <div class="col l-1-5 m-3 c-6 slider-category__item">
+                            <a href="#" class="slider-category__item-link">
+                                <img src="./assets/img/listcategory/brand_3.jpg" alt="" class="slider-category__img">
+                            </a>
+                            <div>
+                                <a href="#" class="slider-category__item-name">LMHT</a>
+                            </div>
+                        </div>
+                        <div class="col l-1-5 m-3 c-6 slider-category__item">
+                            <a href="#" class="slider-category__item-link">
+                                <img src="./assets/img/listcategory/brand_4.jpg" alt="" class="slider-category__img">
+                            </a>
+                            <div>
+                                <a href="#" class="slider-category__item-name">Dark Souls</a>
+                            </div>
+                        </div>
+                        <div class="col l-1-5 m-3 c-6 slider-category__item">
+                            <a href="#" class="slider-category__item-link">
+                                <img src="./assets/img/listcategory/brand_5.jpg" alt="" class="slider-category__img">
+                            </a>
+                            <div>
+                                <a href="#" class="slider-category__item-name">The Witcher</a>
+                            </div>
+                        </div>
+                        <div class="col l-1-5 m-3 c-6 slider-category__item">
+                            <a href="#" class="slider-category__item-link">
+                                <img src="./assets/img/listcategory/brand_6.jpg" alt="" class="slider-category__img">
+                            </a>
+                            <div>
+                                <a href="#" class="slider-category__item-name">Pokemon</a>
+                            </div>
+                        </div>
+                        <div class="col l-1-5 m-3 c-6 slider-category__item">
+                            <a href="#" class="slider-category__item-link">
+                                <img src="./assets/img/listcategory/brand_7.jpg" alt="" class="slider-category__img">
+                            </a>
+                            <div>
+                                <a href="#" class="slider-category__item-name">Hollow Knight</a>
+                            </div>
+                        </div>
+                        <div class="col l-1-5 m-3 c-6 slider-category__item">
+                            <a href="#" class="slider-category__item-link">
+                                <img src="./assets/img/listcategory/brand_8.jpg" alt="" class="slider-category__img">
+                            </a>
+                            <div>
+                                <a href="#" class="slider-category__item-name">Animal Crossing</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- list products -->
+        <div class="selection-list-1 margin-bottom-40">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="title col l-12 m-12 c-12">
+                        <h2>
+                            <a href="#" class="title__link">NHỮNG MẪU ÁO MỚI NHẤT</a>
+                        </h2>
+                    </div>
+                    <div class="col l-12 m-12 c-12">
+                        <div class="row products-list">
+                            <div class="col l-3 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listnew/1.jpg');">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Áo thun Assassin's Creed Valhalla
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">250.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">280.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-3 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listnew/2.jpg')"></div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Áo thun Arcane Vi & Jinx
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">250.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">290.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-3 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" 
+                                            style="background-image: url('./assets/img/listproduct/listnew/3.jpg');">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Áo thun Jinx Khẩu Pháo Nổi Loạn
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">250.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">290.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-3 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" 
+                                            style="background-image: url('./assets/img/listproduct/listnew/4.jpg');">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Áo thun Tôi Là Ninja
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">250.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">280.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-3 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" 
+                                            style="background-image: url('./assets/img/listproduct/listnew/5.jpg');">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Áo thun Burn It All Down Worlds 2021
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">250.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">280.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-3 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" 
+                                            style="background-image: url('./assets/img/listproduct/listnew/6.jpg');">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Áo thun Sonic Thư Giãn Tí
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">250.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">280.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-3 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" 
+                                            style="background-image: url('./assets/img/listproduct/listnew/7.jpg');">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Áo thun Miss Minutes - Loki
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">250.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">280.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-3 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" 
+                                            style="background-image: url('./assets/img/listproduct/listnew/8.jpg');">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Áo thun Loki - Back To The Sacred Timeline
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">250.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">280.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-3 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" 
+                                            style="background-image: url('./assets/img/listproduct/listnew/9.jpg');">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Áo thun The Next Level
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">250.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">280.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- btn see all -->
+                        <div class="btn-see flex-center">
+                            <a href="#" class="btn-see-all">
+                                Xem tất cả
+                                <i class="fas fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="selection-list-2 margin-bottom-40">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-12 m-12 c-12">
+                        <div class="sale-banner">
+                            <a href="#">
+                                <img src="./assets/img/listproduct/listsale/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-12 m-12 c-12 products-sale-background">
+                        <div class="products-sale">
+                            <div class="title col l-12 m-12 c-12">
+                                    <h2>
+                                        <a href="#" class="title__link">Random Sale</a>
+                                    </h2>
+                            </div>
+                            <div class="col l-12 m-12 c-12">
+                                    <div class="row products-list-sale sm-gutter">
+                                        <div class="col l-2-4 m-3 product-item flex-center">
+                                            <a href="#" class="product-item__link">
+                                                <div class="product-item__header">
+                                                    <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listsale/1.jpg');">
+                                                        <img src="./assets/img/listproduct/listsale/backgroundImg.png" alt="" class="product-item__img-background">                                                  
+                                                    </div>
+                                                    <div class="product-item__sale">
+                                                        <span class="flex-center">14%</span>
+                                                    </div>
+                                                    <div class="product-item__action flex-center">
+                                                        <button class="btn-product">
+                                                            <i class="btn-product__icon fas fa-search"></i>
+                                                        </button>
+                                                        <button class="btn-product">
+                                                            <i class="btn-product__icon far fa-eye"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-item__content">
+                                                    <h4 class="product-item__name-link">
+                                                        Áo thun You Are A Kirby
+                                                    </h4>
+                                                    <div class="product-item__price">
+                                                        <span class="product-item__price-current">220.000 <span class="vnd">đ</span></span>
+                                                        <span class="product-item__price-old">290.000<span class="vnd">đ</span></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col l-2-4 m-3 product-item flex-center">
+                                            <a href="#" class="product-item__link">
+                                                <div class="product-item__header">
+                                                    <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listsale/2.jpg');">
+                                                        <img src="./assets/img/listproduct/listsale/backgroundImg.png" alt="" class="product-item__img-background">                                                  
+                                                    </div>
+                                                    <div class="product-item__sale">
+                                                        <span class="flex-center">14%</span>
+                                                    </div>
+                                                    <div class="product-item__action flex-center">
+                                                        <button class="btn-product">
+                                                            <i class="btn-product__icon fas fa-search"></i>
+                                                        </button>
+                                                        <button class="btn-product">
+                                                            <i class="btn-product__icon far fa-eye"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-item__content">
+                                                    <h4 class="product-item__name-link">
+                                                        Áo thun Hades Chibi
+                                                    </h4>
+                                                    <div class="product-item__price">
+                                                        <span class="product-item__price-current">220.000 <span class="vnd">đ</span></span>
+                                                        <span class="product-item__price-old">290.000<span class="vnd">đ</span></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col l-2-4 m-3 product-item flex-center">
+                                            <a href="#" class="product-item__link">
+                                                <div class="product-item__header">
+                                                    <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listsale/3.jpg');">
+                                                        <img src="./assets/img/listproduct/listsale/backgroundImg.png" alt="" class="product-item__img-background">                                                  
+                                                    </div>
+                                                    <div class="product-item__sale">
+                                                        <span class="flex-center">14%</span>
+                                                    </div>
+                                                    <div class="product-item__action flex-center">
+                                                        <button class="btn-product">
+                                                            <i class="btn-product__icon fas fa-search"></i>
+                                                        </button>
+                                                        <button class="btn-product">
+                                                            <i class="btn-product__icon far fa-eye"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-item__content">
+                                                    <h4 class="product-item__name-link">
+                                                        Áo thun Zhongli - Genshin Impact
+                                                    </h4>
+                                                    <div class="product-item__price">
+                                                        <span class="product-item__price-current">220.000 <span class="vnd">đ</span></span>
+                                                        <span class="product-item__price-old">290.000<span class="vnd">đ</span></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col l-2-4 m-3 product-item flex-center">
+                                            <a href="#" class="product-item__link">
+                                                <div class="product-item__header">
+                                                    <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listsale/4.jpg');">
+                                                        <img src="./assets/img/backgroundwibu.png" alt="" class="product-item__img-background">
+                                                    </div>
+                                                    <div class="product-item__sale">
+                                                        <span class="flex-center">14%</span>
+                                                    </div>
+                                                    <div class="product-item__action flex-center">
+                                                        <button class="btn-product">
+                                                            <i class="btn-product__icon fas fa-search"></i>
+                                                        </button>
+                                                        <button class="btn-product">
+                                                            <i class="btn-product__icon far fa-eye"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-item__content">
+                                                    <h4 class="product-item__name-link">
+                                                        Áo thun Giyu Tomioka
+                                                    </h4>
+                                                    <div class="product-item__price">
+                                                        <span class="product-item__price-current">220.000 <span class="vnd">đ</span></span>
+                                                        <span class="product-item__price-old">290.000<span class="vnd">đ</span></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col l-2-4 m-3 product-item flex-center">
+                                            <a href="#" class="product-item__link">
+                                                <div class="product-item__header">
+                                                    <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listsale/5.jpg');">
+                                                        <img src="./assets/img/listproduct/listsale/backgroundImg.png" alt="" class="product-item__img-background">                                                  
+                                                    </div>
+                                                    <div class="product-item__sale">
+                                                        <span class="flex-center">14%</span>
+                                                    </div>
+                                                    <div class="product-item__action flex-center">
+                                                        <button class="btn-product">
+                                                            <i class="btn-product__icon fas fa-search"></i>
+                                                        </button>
+                                                        <button class="btn-product">
+                                                            <i class="btn-product__icon far fa-eye"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-item__content">
+                                                    <h4 class="product-item__name-link">
+                                                        Áo thun Disconnect
+                                                    </h4>
+                                                    <div class="product-item__price">
+                                                        <span class="product-item__price-current">220.000 <span class="vnd">đ</span></span>
+                                                        <span class="product-item__price-old">290.000<span class="vnd">đ</span></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                            </div>
+                            <!-- btn see all -->
+                            <div class="btn-see flex-center">
+                                    <a href="#" class="btn-see-all">
+                                        Xem tất cả
+                                        <i class="fas fa-angle-right"></i>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="selection-list-3 margin-bottom-40">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="title col l-12 m-12 c-12">
+                        <h2>
+                            <a href="#" class="title__link">Wibu Áo</a>
+                        </h2>
+                    </div>
+                    <div class="col l-8 m-8 c-12">
+                        <div class="row products-wibu">
+                            <div class="col l-4 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listwibu/1.jpg');">
+                                            <img src="./assets/img/backgroundwibu.png" alt="" class="product-item__img-background">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Áo thun Beast of Darkness - Berserk
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">250.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">290.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listwibu/2.webp');">
+                                            <img src="./assets/img/backgroundwibu.png" alt="" class="product-item__img-background">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Áo thun Giyu Tomioka
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">220.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">290.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listwibu/3.jpg');">
+                                            <img src="./assets/img/backgroundwibu.png" alt="" class="product-item__img-background">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Áo thun Wings of Freedom
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">250.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">290.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listwibu/4.jpg');">
+                                            <img src="./assets/img/backgroundwibu.png" alt="" class="product-item__img-background">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Áo thun Inosuke - Beast Breathing
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">250.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">290.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listwibu/5.jpg');">
+                                            <img src="./assets/img/backgroundwibu.png" alt="" class="product-item__img-background">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Áo thun Shonen Jump Main Part 2
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">250.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">290.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listwibu/6.jpg');">
+                                            <img src="./assets/img/backgroundwibu.png" alt="" class="product-item__img-background">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Áo thun Shonen Jump Main Part 1
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">250.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">290.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-4 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listwibu/7.jpg');">
+                                            <img src="./assets/img/backgroundwibu.png" alt="" class="product-item__img-background">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Áo thun Hinata Shoyo - Haikyuu
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">250.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">290.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- btn see all -->
+                        <div class="btn-see flex-center">
+                            <a href="#" class="btn-see-all">
+                                Xem tất cả
+                                <i class="fas fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-4 c-12 list__banner">
+                        <a href="#">
+                            <img src="https://theme.hstatic.net/200000249781/1000688480/14/section_pro_banner.jpg?v=186" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="selection-list-4 margin-bottom-40">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="title col l-12 m-12 c-12">
+                        <h2>
+                            <a href="#" class="title__link">Áo Game</a>
+                        </h2>
+                    </div>
+                    <div class="col l-6 m-12 c-12 list__banner">
+                        <a href="#">
+                            <img src="./assets/img/listproduct/listgame/logo.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6 product-item flex-center">
+                        <a href="#" class="product-item__link">
+                            <div class="product-item__header">
+                                <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listgame/1.jpg');">
+                                </div>
+                                <div class="product-item__sale">
+                                    <span class="flex-center">14%</span>
+                                </div>
+                                <div class="product-item__action flex-center">
+                                    <button class="btn-product">
+                                        <i class="btn-product__icon fas fa-search"></i>
+                                    </button>
+                                    <button class="btn-product">
+                                        <i class="btn-product__icon far fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-item__content">
+                                <h4 class="product-item__name-link">
+                                    Áo thun Assassin's Creed Valhalla
+                                </h4>
+                                <div class="product-item__price">
+                                    <span class="product-item__price-current">250.000 <span class="vnd">đ</span></span>
+                                    <span class="product-item__price-old">290.000<span class="vnd">đ</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6 product-item flex-center">
+                        <a href="#" class="product-item__link">
+                            <div class="product-item__header">
+                                <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listgame/2.jpg');">
+                                </div>
+                                <div class="product-item__sale">
+                                    <span class="flex-center">14%</span>
+                                </div>
+                                <div class="product-item__action flex-center">
+                                    <button class="btn-product">
+                                        <i class="btn-product__icon fas fa-search"></i>
+                                    </button>
+                                    <button class="btn-product">
+                                        <i class="btn-product__icon far fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-item__content">
+                                <h4 class="product-item__name-link">
+                                    Áo thun Arcane Vi & Jinx
+                                </h4>
+                                <div class="product-item__price">
+                                    <span class="product-item__price-current">250.000 <span class="vnd">đ</span></span>
+                                    <span class="product-item__price-old">290.000<span class="vnd">đ</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6 product-item flex-center">
+                        <a href="#" class="product-item__link">
+                            <div class="product-item__header">
+                                <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listgame/3.jpg');">
+                                </div>
+                                <div class="product-item__sale">
+                                    <span class="flex-center">14%</span>
+                                </div>
+                                <div class="product-item__action flex-center">
+                                    <button class="btn-product">
+                                        <i class="btn-product__icon fas fa-search"></i>
+                                    </button>
+                                    <button class="btn-product">
+                                        <i class="btn-product__icon far fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-item__content">
+                                <h4 class="product-item__name-link">
+                                    Áo thun Jinx Khẩu Pháo Nổi Loạn
+                                </h4>
+                                <div class="product-item__price">
+                                    <span class="product-item__price-current">250.000 <span class="vnd">đ</span></span>
+                                    <span class="product-item__price-old">290.000<span class="vnd">đ</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6 product-item flex-center">
+                        <a href="#" class="product-item__link">
+                            <div class="product-item__header">
+                                <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listgame/4.jpg');">
+                                </div>
+                                <div class="product-item__sale">
+                                    <span class="flex-center">14%</span>
+                                </div>
+                                <div class="product-item__action flex-center">
+                                    <button class="btn-product">
+                                        <i class="btn-product__icon fas fa-search"></i>
+                                    </button>
+                                    <button class="btn-product">
+                                        <i class="btn-product__icon far fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-item__content">
+                                <h4 class="product-item__name-link">
+                                    Áo thun Tôi Là Ninja
+                                </h4>
+                                <div class="product-item__price">
+                                    <span class="product-item__price-current">170.000 <span class="vnd">đ</span></span>
+                                    <span class="product-item__price-old">210.000<span class="vnd">đ</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6 product-item flex-center">
+                        <a href="#" class="product-item__link">
+                            <div class="product-item__header">
+                                <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listgame/5.jpg');">
+                                </div>
+                                <div class="product-item__sale">
+                                    <span class="flex-center">14%</span>
+                                </div>
+                                <div class="product-item__action flex-center">
+                                    <button class="btn-product">
+                                        <i class="btn-product__icon fas fa-search"></i>
+                                    </button>
+                                    <button class="btn-product">
+                                        <i class="btn-product__icon far fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-item__content">
+                                <h4 class="product-item__name-link">
+                                    Áo thun Burn It All Down Worlds 2021
+                                </h4>
+                                <div class="product-item__price">
+                                    <span class="product-item__price-current">250.000 <span class="vnd">đ</span></span>
+                                    <span class="product-item__price-old">290.000<span class="vnd">đ</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6 product-item flex-center">
+                        <a href="#" class="product-item__link">
+                            <div class="product-item__header">
+                                <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listgame/6.jpg');">
+                                </div>
+                                <div class="product-item__sale">
+                                    <span class="flex-center">14%</span>
+                                </div>
+                                <div class="product-item__action flex-center">
+                                    <button class="btn-product">
+                                        <i class="btn-product__icon fas fa-search"></i>
+                                    </button>
+                                    <button class="btn-product">
+                                        <i class="btn-product__icon far fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-item__content">
+                                <h4 class="product-item__name-link">
+                                    Áo thun Sonic Thư Giãn Tí
+                                </h4>
+                                <div class="product-item__price">
+                                    <span class="product-item__price-current">250.000 <span class="vnd">đ</span></span>
+                                    <span class="product-item__price-old">290.000<span class="vnd">đ</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="btn-see flex-center">
+                        <a href="#" class="btn-see-all">
+                            Xem tất cả
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="selection-list-5 margin-bottom-40">
+            <div class="grid wide">
+                <div class="row sm-gutter">
+                    <div class="col l-4 m-6 c-12 list__banner">
+                        <a href="#">
+                            <img src="./assets/img/listproduct/listbanner/banner_coll_1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col l-4 m-6 c-12 list__banner">
+                        <a href="#">
+                            <img src="./assets/img/listproduct/listbanner/banner_coll_2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col l-4 m-6 c-12 list__banner">
+                        <a href="#">
+                            <img src="./assets/img/listproduct/listbanner/banner_coll_3.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="selection-list-6 margin-bottom-40">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="title col l-8 m-12 c-12">
+                        <h2>
+                            <a href="#" class="title__link">Các dòng áo khác tại The Next Level</a>
+                        </h2>
+                    </div>
+                    <div class="col l-4">
+                        <ul class="tabs-list flex-center">
+                            <li class="tab-item">
+                                <button class="tab-item__link active">Áo tay dài</button>
+                            </li>
+                            <li class="tab-item">
+                                <button class="tab-item__link">Sweater</button>
+                            </li>
+                            <li class="tab-item">
+                                <button class="tab-item__link">Hoodie</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-12 m-12 c-12 margin-top-32">
+                        <div class="row tab-product active">
+                            <div class="col l-3 m-3 c-6 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listkhac/taydai/1.jpg');">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Áo thun dài tay Snorlax Đừng Làm Phiền
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">250.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">280.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-3 m-3 c-6 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listkhac/taydai/2.jpg');">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Áo thun dài tay Dark Souls 3 - Soul of Cinder
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">280.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">310.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-3 m-3 c-6 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listkhac/taydai/3.jpg');">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Áo thun dài tay Yasuo & Yone
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">280.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">310.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-3 m-3 c-6 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listkhac/taydai/4.jpg');">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Áo thun dài tay Dark Souls - Game Là Dễ
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">280.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">310.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row tab-product">
+                            <div class="col l-3 m-3 c-6 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listkhac/sweater/1.jpg');">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Sweater 6th Street - Cyberpunk 2077 Gangs
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">360.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">400.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-3 m-3 c-6 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listkhac/sweater/2.jpg');">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Sweater 8-bit Road - Pacman
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">360.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">400.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-3 m-3 c-6 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listkhac/sweater/3.jpg');">
+                                            <img src="./assets/img/backgroundwibu.png" alt="" class="product-item__img-background">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Sweater Ace Hoả Quyền
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">360.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">400.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-3 m-3 c-6 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listkhac/sweater/4.jpg');">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Sweater Ahri & Teemo
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">360.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">400.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row tab-product">
+                            <div class="col l-3 m-3 c-6 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listkhac/hoodie/1.jpg');">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Hoodie Assassin's Creed Valhalla
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">410.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">450.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-3 m-3 c-6 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listkhac/hoodie/2.jpg');">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Hoodie Arcane Vi & Jinx
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">410.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">450.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-3 m-3 c-6 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listkhac/hoodie/3.jpg');">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Hoodie Jinx Khẩu Pháo Nổi Loạn
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">410.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">450.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-3 m-3 c-6 product-item flex-center">
+                                <a href="#" class="product-item__link">
+                                    <div class="product-item__header">
+                                        <div class="product-item__img" style="background-image: url('./assets/img/listproduct/listkhac/hoodie/4.jpg');">
+                                        </div>
+                                        <div class="product-item__sale">
+                                            <span class="flex-center">14%</span>
+                                        </div>
+                                        <div class="product-item__action flex-center">
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon fas fa-search"></i>
+                                            </button>
+                                            <button class="btn-product">
+                                                <i class="btn-product__icon far fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-item__content">
+                                        <h4 class="product-item__name-link">
+                                            Hoodie Burn It All Down Worlds 2021
+                                        </h4>
+                                        <div class="product-item__price">
+                                            <span class="product-item__price-current">410.000 <span class="vnd">đ</span></span>
+                                            <span class="product-item__price-old">450.000<span class="vnd">đ</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="btn-see flex-center">
+                            <a href="#" class="btn-see-all">
+                                Xem tất cả
+                                <i class="fas fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer id="footer">
+            <div class="footer__top">
+                <div class="grid">
+                    <div class="row">
+                        <div class="col l-6 l-o-3 c-12 m-8 m-o-2 footer__top-content">
+                            <h4 class="footer__top-text">Đăng ký nhận tin</h4>
+                            <div class="form__register">
+                                <input type="email" required placeholder="Nhập địa chỉ Email" class="form__register-input">
+                                <button class="form__register-btn">Đăng Ký</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__body">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12">
+                            <div class="footer__body-titly">Về chúng tôi</div>
+                            <ul class="footer__body-list">
+                                <li class="footer__body-item">
+                                    The Next Level - Sự lựa chọn của mọi Game Thủ
+                                </li>
+                                <li class="footer__body-item">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    Địa chỉ: 282 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội
+                                </li>
+                                <li class="footer__body-item">
+                                    <i class="fa fa-mobile-alt"></i>
+                                    Số điện thoại:
+                                    <a href="tel:0971932100" class="footer__body-item-link">
+                                        0971932100
+                                    </a>
+                                </li>
+                                <li class="footer__body-item">
+                                    <i class="fa fa-envelope"></i>
+                                    Email:
+                                    <a href="mailto:dvson0912@gmail.com" class="footer__body-item-link">
+                                        dvson0912@gmail.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="footer__body-titly">CHÍNH SÁCH</div>
+                            <ul class="footer__body-list">
+                                <li class="footer__body-item">
+                                    <a href="#" class="footer__body-item-link">
+                                        Chính sách bán hàng
+                                    </a>
+                                </li>
+                                <li class="footer__body-item">
+                                    <a href="#" class="footer__body-item-link">
+                                        Chính sách đổi trả
+                                    </a>
+                                </li>
+                                <li class="footer__body-item">
+                                    <a href="#" class="footer__body-item-link">
+                                        Chính sách bảo mật
+                                    </a>
+                                </li>
+                                <li class="footer__body-item">
+                                    <a href="#" class="footer__body-item-link">
+                                        Điều khoản dịch vụ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="footer__body-titly">THÔNG TIN</div>
+                            <ul class="footer__body-list">
+                                <li class="footer__body-item">
+                                    <a href="#" class="footer__body-item-link">
+                                        Hướng dẫn chọn size
+                                    </a>
+                                </li>
+                                <li class="footer__body-item">
+                                    <a href="#" class="footer__body-item-link">
+                                        Hướng dẫn bảo quản
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="footer__body-titly">Theo dõi chúng tôi</div>
+                            <ul class="footer__body-list list-icon-link">
+                                <li class="footer__body-item">
+                                    <a href="#" class="footer__body-item-link">
+                                        <i class="footer__body-item-icon fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="footer__body-item">
+                                    <a href="#" class="footer__body-item-link">
+                                        <i class="footer__body-item-icon fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="footer__body-item">
+                                    <a href="#" class="footer__body-item-link">
+                                        <i class="footer__body-item-icon fab fa-behance"></i>
+                                    </a>
+                                </li>
+                                <li class="footer__body-item">
+                                    <a href="#" class="footer__body-item-link">
+                                        <i class="footer__body-item-icon fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-12 m-12 c-12">
+                            <span class="footer__bottom-license">
+                                © Bản quyền thuộc về The Next Level |
+                            </span>
+                            <a href="https://www.haravan.com/?utm_campaign=poweredby&utm_medium=haravan&utm_source=onlinestore" class="footer__bottom-license-link">
+                                Powered by Haravan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- modal menu navbar -->
+        <div class="popupCartModal"></div>
+        <div class="modal-nav">
+            <div class="modal-nav__account">
+                <i class="fas fa-user-circle"></i>
+                <div class="list-account">
+                    <div class="list-account__login">
+                        <a href="#" class="account-link">
+                            Đăng nhập
+                        </a> 
+                    </div>
+                    <div class="list-account__register">
+                        <a href="#" class="account-link">
+                            Đăng kí
+                        </a> 
+                    </div>
+                </div>
+            </div>
+            <div class="modal-nav__menu">
+                <ul class="modal-nav__menu-list">
+                    <li class="modal-nav__menu-item">
+                        <a href="#" class="modal-nav__menu-link">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li class="modal-nav__menu-item">
+                        <a href="#" class="modal-nav__menu-link">
+                            Sản Phẩm
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="menu-subnav">
+                            <li class="menu-subnav__item">
+                                <a href="#" class="menu-subnav__item-link">T-Shirt</a>
+                            </li>
+                            <li class="menu-subnav__item">
+                                <a href="#" class="menu-subnav__item-link">Áo dài tay</a>
+                            </li>
+                            <li class="menu-subnav__item">
+                                <a href="#" class="menu-subnav__item-link">Sweater</a>
+                            </li>
+                            <li class="menu-subnav__item">
+                                <a href="#" class="menu-subnav__item-link">Hoodie</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="modal-nav__menu-item">
+                        <a href="#" class="modal-nav__menu-link">
+                            Bộ sưu tập
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="menu-subnav">
+                            <li class="menu-subnav__item">
+                                <a href="#" class="menu-subnav__item-link">WIBU</a>
+                            </li>
+                            <li class="menu-subnav__item">
+                                <a href="#" class="menu-subnav__item-link">Cyberpunk 2077</a>
+                            </li>
+                            <li class="menu-subnav__item">
+                                <a href="#" class="menu-subnav__item-link">Pokemon</a>
+                            </li>
+                            <li class="menu-subnav__item">
+                                <a href="#" class="menu-subnav__item-link">Hollow Knight</a>
+                            </li>
+                            <li class="menu-subnav__item">
+                                <a href="#" class="menu-subnav__item-link">League of Legends</a>
+                            </li>
+                            <li class="menu-subnav__item">
+                                <a href="#" class="menu-subnav__item-link">The Witcher 3</a>
+                            </li>
+                            <li class="menu-subnav__item">
+                                <a href="#" class="menu-subnav__item-link">Dark Souls</a>
+                            </li>
+                            <li class="menu-subnav__item">
+                                <a href="#" class="menu-subnav__item-link">Rock Man</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="modal-nav__menu-item">
+                        <a href="#" class="modal-nav__menu-link">
+                            RANDOM SALE
+                            <img src="https://theme.hstatic.net/200000249781/1000688480/14/icon_menu_flashsale.png?v=186" alt="" class="sub-navbar__item-img">
+                        </a>
+                    </li>
+                    <li class="modal-nav__menu-item">
+                        <a href="#" class="modal-nav__menu-link">
+                            Liên hệ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- thư viên slick slider -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- js -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+.section3{
+    &-container{
+        display: flex;
+        padding: 5rem 0;
+    }
+    &__img{
+        width: 656px;
+        margin-right: 5rem;
+    }
+}
+
+.form{
+    padding: 1rem;
+    &__top{
+        margin-bottom: 5rem;
+    }
+    &__row{
+        display: flex;
+        gap:0 3rem;
+        margin-bottom: 3rem;
+    }
+    &__column{
+        display: flex;
+        gap: 1rem 0;
+        flex-direction: column;
+        flex: 1;
+        &-lable{
+            font-weight: 500;
+            font-size: 2rem;
+            color: $title-color;
+        }
+        &-input{
+            padding: 1.5rem 3rem;
+            outline: none;
+            border: none;
+            background: rgba(255, 248, 248, 1);
+            width: 100%;
+            font-size: 1.6rem;
+            &::placeholder{
+                color: $text-color;
+            }
+        }
+    }
+}

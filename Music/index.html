@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="app grid" style="background-image: url('./assets/img/themeBgs/listTheme1/theme1.svg');">
+        <div class="sidebar">
+            <div class="sidebar__logo">
+                <a href="" class="sidebar__logo-link">
+                    <img src="./assets/img/logos/main-logo.svg" alt="Logo" class="sidebar__logo-img">
+                </a>
+            </div>
+            <div class="sidebar__nav">
+                <ul class="sidebar__nav-list">
+                    <li class="sidebar__nav-item active">
+                        <i class="sidebar__nav-icon fas fa-music"></i>
+                        <span>Cá Nhân</span>
+                    </li>
+                    <li class="sidebar__nav-item">
+                        <i class="sidebar__nav-icon fas fa-record-vinyl"></i>
+                        <span>Khám Phá</span>
+                    </li>
+                    <li class="sidebar__nav-item">
+                        <i class="sidebar__nav-icon fab fa-facebook-messenger"></i>
+                        <span>#zingchart</span>
+                    </li>
+                    <li class="sidebar__nav-item">
+                        <i class="sidebar__nav-icon fas fa-guitar"></i>
+                        <span>Radio</span>
+                    </li>
+                    <li class="sidebar__nav-item">
+                        <i class="sidebar__nav-icon fas fa-calendar-week"></i>
+                        <span>Theo Dõi</span>
+                    </li>
+                </ul>
+                <div class="seperate"></div>
+            </div>
+            <div class="sidebar__synthetic">
+                <div class="sidebar__nav">
+                    <ul class="sidebar__nav-list">
+                        <li class="sidebar__nav-item">
+                            <i class="sidebar__nav-icon fas fa-music"></i>
+                            <span>Nhạc Mới</span>
+                        </li>
+                        <li class="sidebar__nav-item">
+                            <i class="sidebar__nav-icon far fa-gem"></i>
+                            <span>Thể Loại</span>
+                        </li>
+                        <li class="sidebar__nav-item">
+                            <i class="sidebar__nav-icon far fa-star"></i>
+                            <span>Top 100</span>
+                        </li>
+                        <li class="sidebar__nav-item">
+                            <i class="sidebar__nav-icon fas fa-video"></i>
+                            <span>MV</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar__vip flex-center">
+                    <span class="sidebar__vip-text">
+                        Nghe nhạc không quảng cáo cùng kho nhạc VIP
+                    </span>
+                    <div class="btn btn-vip">
+                        nâng cấp vip
+                    </div>
+                </div>
+                <div class="sidebar__library">
+                    Thư Viện
+                    <ul class="sidebar__library-list">
+                        <li class="sidebar__library-item">
+                            <a href="#" class="sidebar__library-link">
+                                <img src="https://zjs.zadn.vn/zmp3-desktop/releases/v1.0.13/static/media/my-song.cf0cb0b4.svg" alt="" class="sidebar__library-link-img">
+                                <span>Bài Hát</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__library-item">
+                            <a href="#" class="sidebar__library-link">
+                                <img src="https://zjs.zadn.vn/zmp3-desktop/releases/v1.0.13/static/media/my-playlist.7e92a5f0.svg" alt="" class="sidebar__library-link-img">
+                                <span>Playlist</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__library-item">
+                            <a href="#" class="sidebar__library-link">
+                                <img src="https://zjs.zadn.vn/zmp3-desktop/releases/v1.0.13/static/media/my-history.374cb625.svg" alt="" class="sidebar__library-link-img">
+                                <span>Gần Đây</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar__addlist">
+                <i class="sidebar__addlist-icon far fa-plus-square"></i>
+                <span class="sidebar__addlist-text">Tạo playlist mới</span>
+            </div>
+        </div>
+        <div class="header row no-gutters">
+            <div class="col l-1">
+                <a href="#" class="header__prev header__button header__button-disabled">
+                    <i class="fas fa-long-arrow-alt-left"></i>
+                </a>
+                <a href="#" class="header__next header__button">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </a>
+            </div>
+            <div class="col l-8 header__search flex-center">
+                <input type="text" class="header__search-input" placeholder="Nhập tên bài hát,nghệ sĩ hoặc MV...">
+                <i class="header__search-icon fas fa-search"></i>
+                <div class="header__search-history">
+                    <ul class="header__search-history-list">
+                        <span class="header__search-history-heading">Đề Xuất Cho Bạn</span>
+                        <li class="header__search-history-item">
+                            <a href="#" class="header__search-history-link">
+                                <i class="fas fa-search"></i>
+                                Tình Bạn Diệu Kỳ
+                            </a>
+                        </li>
+                        <li class="header__search-history-item">
+                            <a href="#" class="header__search-history-link">
+                                <i class="fas fa-search"></i>
+                                Tình Bạn Diệu Kỳ
+                            </a>
+                        </li>
+                        <li class="header__search-history-item">
+                            <a href="#" class="header__search-history-link">
+                                <i class="fas fa-search"></i>
+                                Tình Bạn Diệu Kỳ
+                            </a>
+                        </li>
+                        <li class="header__search-history-item">
+                            <a href="#" class="header__search-history-link">
+                                <i class="fas fa-search"></i>
+                                Tình Bạn Diệu Kỳ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col l-3 header__select flex-center">
+                <div class="header__select-backgound header__select-button">
+                    <img src="./assets/img/imgthem/pngtree-shirt-icon-for-your-design-websites-and-projects-png-image_5206560.jpg" alt="">
+                </div>
+                <div class="header__select-upload header__select-button">
+                    <img src="data:image/png;base64,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" alt="">
+                </div>
+                <div class="header__select-setting header__select-button">
+                    <img src="https://previews.123rf.com/images/vasiffeyzullazadeh/vasiffeyzullazadeh1810/vasiffeyzullazadeh181000108/120747887-settings-icon-vector.jpg" alt="">
+                </div>
+                <div class="header__select-use header__select-button">
+                    <img src="https://s120-ava-talk.zadn.vn/9/c/7/f/2/120/5ff552a0327f456c97484c3aaa2a8923.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container row no-gutters">
+            <div class="col l-12 container__top">
+                <div class="row no-gutters">
+                    <div class="col l-12 container__top-user flex-center">
+                        <img src="https://s120-ava-talk.zadn.vn/9/c/7/f/2/120/5ff552a0327f456c97484c3aaa2a8923.jpg" alt="" class="container__top-user-avatar">
+                        <div class="container__top-user-name">
+                            Đào Văn Sơn
+                        </div>
+                        
+                        <div class="container__top-vip">
+                            <button class="container__top-btn-vip btn">mua vip ngay</button>
+                            <button class="btn">nhập code vip</button>
+                            <button class="btn container__top-btn-setting" title="setting">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col l-12 container__nav flex-center">
+                        <ul class="container__nav-list flex-center">
+                            <li class="container__nav-item flex-center active">
+                                <span>tổng quan</span>
+                            </li>
+                            <li class="container__nav-item flex-center">
+                                <span>bài hát</span>
+                            </li>
+                            <li class="container__nav-item flex-center">
+                                <span>playlist</span>
+                            </li>
+                            <li class="container__nav-item flex-center">
+                                <span>nghệ sĩ</span>
+                            </li>
+                            <li class="container__nav-item flex-center">
+                                <span>
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </span>
+                                <ul class="subnav__list">
+                                    <li class="subnav__item">oa</li>
+                                    <li class="subnav__item">ablum</li>
+                                    <li class="subnav__item">mv</li>
+                                    <li class="subnav__item">tải lên</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-12 container__song">
+                        <div class="row no-gutters  flex-center">
+                            <div class="col l-12 container__song-header">
+                                <div class="row no-gutters flex-center">
+                                    <div class="col l-2 heading">
+                                        <a href="#" class="heading__link">bài hát<i class="fas fa-chevron-right"></i></a>
+                                    </div>
+                                    <div class="col l-10 container__song-header-btn">
+                                        <button class="btn"><i class="fas fa-upload"></i>tải lên</button>
+                                        <button class="btn btn-primary"><i class="fas fa-play"></i>phát tất cả</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-12 container__song-body">
+                                <div class="row no-gutters">
+                                    <div class="container__song-body-slider">
+                                        <div class="sider__list">
+                                        </div>
+                                    </div>
+                                    <div class="container__song-body-list">
+                                        <div class="song__list">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col l-12 container__slider">
+                        <div class="row no-gutters flex-center">
+                            <div class="col l-12 heading">
+                                <a href="#" class="heading__link">playlist</a>
+                            </div>
+                            <div class="col l-12">
+                                <div class="row no-gutters container__slider-list">
+                                    <div class="col l-2-4 container__slider-item">
+                                        <div class="container__slider-item-add flex-center">
+                                            <i class="fas fa-plus"></i>
+                                            <span>Tạo Playlist Mới</span>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 container__slider-item">
+                                        <div class="container__slider-item-avatar">
+                                            <div class="container__slider-item-avatar-img" style="background: url(./assets/img/avatars/avatar.jpg) no-repeat center center / cover;"></div>
+                                            <div class="container__slider-item-control">
+                                                <div class="song__item-like song__item-click">
+                                                    <i class="song__item-like-like false fas fa-heart"></i>
+                                                    <i class="song__item-like-nolike far fa-heart"></i>
+                                                </div>
+                                                <div class="playlist__play">
+                                                    <i class="far fa-play-circle"></i>
+                                                </div>
+                                                <div class="song__item-setting song__item-click">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container__slider-item-description">
+                                            <span class="container__slider-item-name">V-Pop: The A-List</span>
+                                            <span class="container__slider-item-source">Zing MP3</span>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 container__slider-item">
+                                        <div class="container__slider-item-avatar">
+                                            <div class="container__slider-item-avatar-img" style="background: url(./assets/img/avatars/avatar.jpg) no-repeat center center / cover;"></div>
+                                            <div class="container__slider-item-control">
+                                                <div class="song__item-like song__item-click">
+                                                    <i class="song__item-like-like false fas fa-heart"></i>
+                                                    <i class="song__item-like-nolike far fa-heart"></i>
+                                                </div>
+                                                <div class="playlist__play">
+                                                    <i class="far fa-play-circle"></i>
+                                                </div>
+                                                <div class="song__item-setting song__item-click">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container__slider-item-description">
+                                            <span class="container__slider-item-name">V-Pop: The A-List</span>
+                                            <span class="container__slider-item-source">Zing MP3</span>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 container__slider-item">
+                                        <div class="container__slider-item-avatar">
+                                            <div class="container__slider-item-avatar-img" style="background: url(./assets/img/avatars/avatar.jpg) no-repeat center center / cover;"></div>
+                                            <div class="container__slider-item-control">
+                                                <div class="song__item-like song__item-click">
+                                                    <i class="song__item-like-like false fas fa-heart"></i>
+                                                    <i class="song__item-like-nolike far fa-heart"></i>
+                                                </div>
+                                                <div class="playlist__play">
+                                                    <i class="far fa-play-circle"></i>
+                                                </div>
+                                                <div class="song__item-setting song__item-click">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container__slider-item-description">
+                                            <span class="container__slider-item-name">V-Pop: The A-List</span>
+                                            <span class="container__slider-item-source">Zing MP3</span>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 container__slider-item">
+                                        <div class="container__slider-item-avatar">
+                                            <div class="container__slider-item-avatar-img" style="background: url(./assets/img/avatars/avatar.jpg) no-repeat center center / cover;"></div>
+                                            <div class="container__slider-item-control">
+                                                <div class="song__item-like song__item-click">
+                                                    <i class="song__item-like-like false fas fa-heart"></i>
+                                                    <i class="song__item-like-nolike far fa-heart"></i>
+                                                </div>
+                                                <div class="playlist__play">
+                                                    <i class="far fa-play-circle"></i>
+                                                </div>
+                                                <div class="song__item-setting song__item-click">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container__slider-item-description">
+                                            <span class="container__slider-item-name">V-Pop: The A-List</span>
+                                            <span class="container__slider-item-source">Zing MP3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="player-control row" style="background: url(./assets/img/themeBgs/listTheme1/playerThemes/theme1.png);">
+            <div class="col l-3 player-control__left flex-center">
+                <div class="media flex-center">
+                    
+                </div>
+            </div>
+            <div class="col l-6 player-control__body flex-center">
+                <div class="control flex-center">
+                    <div class="control__btn control__btn-random">
+                        <i class="fas fa-random"></i>
+                    </div>
+                    <div class="control__btn control__btn-prev">
+                        <i class="fas fa-step-backward"></i>
+                    </div>
+                    <div class="control__play">
+                        <div class="control__btn control__btn-play">
+                            <i class="far fa-play-circle"></i>
+                        </div>
+                        <div class="control__btn control__btn-pause">
+                            <i class="far fa-pause-circle"></i>
+                        </div>
+                    </div>
+                    <div class="control__btn control__btn-next">
+                        <i class="fas fa-step-forward"></i>
+                    </div>
+                    <div class="control__btn control__btn-undo">
+                        <i class="fas fa-undo"></i>
+                    </div>
+
+                </div>
+                <div class="progress-time flex-center">
+                    <span class="current-time">00:00</span>
+                    <input class="progress-time__range" type="range" value="0" step="1" min="0" max="100">
+                    <span class="duration"></span>
+                </div>
+            </div>
+            <div class="col l-3 player-control__right flex-center">
+                <div class="player-control__right-box">
+                    <i class="player-control__right-icon fas fa-microphone-alt"></i>
+                </div>
+                <div class="player-control__right-box">
+                    <i class="player-control__right-icon fas fa-tv"></i>
+                </div>
+                <div class="player-control__right-box flex-center">
+                    <div class="player-control__right-volume">
+                        <i class="player-control__right-icon have-volume fas fa-volume-up"></i>
+                        <i class="player-control__right-icon no-volume fas fa-volume-mute"></i>
+                    </div>
+                    <input type="range" class="volume-range" min="0" max="100" step="1" value="30">
+                </div>
+                <!-- <div class="player-control__right-icon"></div> -->
+            </div>
+        </div>
+    </div>
+    <audio class="audio" type="audio/mpeg" src=""></audio>
+
+    <!-- js -->
+    <!-- <script src="./data/listSong.js"></script> -->
+    <!-- <script src="./data/silder.js"></script> -->
+    <!-- <script src="./data/album.js"></script> -->
+    <!-- <script src="./data/playlist.js"></script> -->
+    <script src="./main.js"></script>
+</body>
+</html>
